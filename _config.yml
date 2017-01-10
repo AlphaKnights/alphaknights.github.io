@@ -17,7 +17,7 @@ title: Alpha Knights
 email: me@tjhorner.com
 description: The official website of the SMHS Alpha Knights.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+url: "https://alphaknights.club" # the base hostname & protocol for your site
 sass_dir: css
 
 # Build settings
