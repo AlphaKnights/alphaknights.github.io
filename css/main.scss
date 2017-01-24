@@ -24,7 +24,10 @@ a{
   text-decoration: underline;
   color: $base-text;
 }
-
+.center {
+    text-align: center;
+    border: 3px solid green;
+}
 .anchor {
   text-decoration: none;
   line-height: 1;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 *, * * {
   box-sizing: border-box; }
 
@@ -9,6 +10,10 @@ body, html {
 a {
   text-decoration: underline;
   color: #404040; }
+
+.center {
+  text-align: center;
+  border: 3px solid green; }
 
 .anchor {
   text-decoration: none;
@@ -114,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 110px;
     min-height: 100px;
     margin-bottom: 30px;
-    background-image: url("http://127.0.0.1:4000/assets/profile.png");
+    background-image: url("http://localhost:4000/assets/profile.png");
     background-repeat: no-repeat; }
 
 .page-content .wrapper {
