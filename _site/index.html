@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,73 +16,29 @@
   
 </head>
 
-
   <body>
-    <div class="header">
-  <div class="header-inner">
-    <a href="/">Alpha Knights</a>
-  </div>
-</div>
+    <div class="hero-background">
+  <div class="hero-mask">
+    <div class="hero-content">
+      <p>Alpha Knights</p>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-  <div class="center">
-    Website in development<br>
-    <a href="https://www.instagram.com/alphaknights/">Instagram</a><br>
-    <a href="http://smusd.org/smhs">School Website</a><br>
-  </div>
-  <iframe width="900" height="510" src="https://www.youtube.com/embed/C0K3IzrhW7s" frameborder="0" allowfullscreen></iframe>
-</div>
-
+      <div class="social-presences">
+        <a href="https://twitter.com/AlphaKnightsSM" class="social-presence-twitter">twitter</a>
+        &bull;
+        <a href="https://www.facebook.com/Alpha-Knights-1810611922545287/" class="social-presence-facebook">facebook</a>
+        &bull;
+        <a href="https://instagram.com/alphaknights" class="social-presence-instagram">instagram</a>
+        &bull;
+        <a href="#" class="social-presence-video">who are we?</a>
       </div>
-    </main>
-    <!--<div class="footer-wrapper">
-  <div class="footer">
-    <h2>About the Author</h2>
-
-    <div class="about">
-      I'm TJ Horner, a 15 year old programmer, "designer", and noob security
-      researcher. I write "useful" posts here sometimes. So feel free to look
-      at them if you want. Reach me: <a href="https://telegram.me/tjhorner">@tjhorner</a>
     </div>
   </div>
-</div>-->
+</div>
 
+<div class="video-standby">
+  <iframe src="" frameborder="0" class="video"></iframe>
+</div>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/hero.js"></script>
   </body>
-
-  <script>
-  var anchorForId = function (id) {
-    var anchor = document.createElement("a");
-    anchor.className = "anchor";
-    anchor.href      = "#" + id;
-    anchor.innerHTML = "<i class=\"anchor-icon\"></i>";
-    anchor.title = "";
-    return anchor;
-  };
-
-  var linkifyAnchors = function (level, containingElement) {
-    var headers = containingElement.getElementsByTagName("h" + level);
-    for (var h = 0; h < headers.length; h++) {
-      var header = headers[h];
-
-      if (typeof header.id !== "undefined" && header.id !== "") {
-        header.insertBefore(anchorForId(header.id), header.firstChild);
-      }
-    }
-  };
-
-  document.onreadystatechange = function () {
-    if (this.readyState === "complete") {
-      var contentBlock = document.getElementsByClassName("post-content")[0];
-      if (!contentBlock) {
-        return;
-      }
-      for (var level = 1; level <= 6; level++) {
-        linkifyAnchors(level, contentBlock);
-      }
-    }
-  };
-</script>
-
 </html>
