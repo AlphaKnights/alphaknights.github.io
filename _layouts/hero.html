@@ -3,6 +3,6 @@
   <body>
     {{ content }}
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="/js/hero.js"></script>
+    <script src="/js/hero.js?{{ site.time | date: "%s%N" }}"></script>
   </body>
 </html>
