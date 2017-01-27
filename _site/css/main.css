@@ -10,11 +10,20 @@ body {
   background-image: url("/assets/img/hero_temp.jpg");
   background-position: center center; }
 
+.hero-video {
+  position: fixed;
+  width: 100%;
+  z-index: 0; }
+  .hero-video video {
+    width: 100%; }
+
 .hero-mask {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  display: table; }
+  display: table;
+  z-index: 1;
+  position: relative; }
 
 .hero-content {
   text-align: center;
@@ -23,6 +32,9 @@ body {
   font-size: 3em;
   display: table-cell;
   vertical-align: middle; }
+
+#video-preload {
+  display: none; }
 
 .video-standby {
   width: 100%;

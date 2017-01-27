@@ -19,11 +19,23 @@ body{
   background-position: center center;
 }
 
+.hero-video{
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+
+  video{
+    width: 100%;
+  }
+}
+
 .hero-mask{
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   display: table;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-content{
@@ -33,6 +45,10 @@ body{
   font-size: 3em;
   display: table-cell;
   vertical-align: middle;
+}
+
+#video-preload{
+  display: none;
 }
 
 .video-standby{

@@ -9,7 +9,7 @@
 
   
   
-  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css?NEWFUCKINGVERSION">
   <link rel="canonical" href="http://localhost:4000/">
   <link rel="alternate" type="application/rss+xml" title="Alpha Knights" href="http://localhost:4000/feed.xml">
 
@@ -18,16 +18,19 @@
 
   <body>
     <div class="hero-background">
+  <div class="hero-video">
+    <video src="/assets/mp4/hero.mp4" muted autoplay></video>
+  </div>
   <div class="hero-mask">
     <div class="hero-content">
       <p>Alpha Knights</p>
 
       <div class="social-presences">
-        <a href="https://twitter.com/AlphaKnightsSM" class="social-presence-twitter">twitter</a>
+        <a href="https://twitter.com/AlphaKnightsSM" class="social-presence-twitter" target="_blank" rel="none">twitter</a>
         &bull;
-        <a href="https://www.facebook.com/Alpha-Knights-1810611922545287/" class="social-presence-facebook">facebook</a>
+        <a href="https://www.facebook.com/Alpha-Knights-1810611922545287/" class="social-presence-facebook" target="_blank" rel="none">facebook</a>
         &bull;
-        <a href="https://instagram.com/alphaknights" class="social-presence-instagram">instagram</a>
+        <a href="https://instagram.com/alphaknights" class="social-presence-instagram" target="_blank" rel="none">instagram</a>
         &bull;
         <a href="#" class="social-presence-video">who are we?</a>
       </div>
@@ -38,6 +41,8 @@
 <div class="video-standby">
   <iframe src="" frameborder="0" class="video"></iframe>
 </div>
+
+<video id="video-preload"></video>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="/js/hero.js"></script>
   </body>
