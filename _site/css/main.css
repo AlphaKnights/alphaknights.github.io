@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto+Condensed|Crimson+Text");
 body {
   margin: 0;
   width: 100%;
   height: 100%; }
 
 .hero-background {
-  height: 100%;
+  height: 600px;
   width: 100%;
   background-image: url("/assets/img/hero_temp.jpg");
   background-position: center center; }
@@ -20,7 +20,7 @@ body {
 .hero-mask {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
+  height: 600px;
   display: table;
   z-index: 1;
   position: relative; }
@@ -38,7 +38,7 @@ body {
 
 .video-standby {
   width: 100%;
-  height: 100%;
+  height: 600px;
   position: fixed;
   left: 0;
   top: 0;
@@ -47,9 +47,64 @@ body {
 
 .video {
   width: 100%;
-  height: 100%;
+  height: 600px;
   z-index: 100; }
 
 .social-presences a {
   color: lightblue;
   text-decoration: none; }
+
+.content {
+  font-family: "Lato", sans-serif;
+  margin: 10px auto;
+  max-width: 900px;
+  color: #353535; }
+  .content a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black; }
+  .content p {
+    font-size: 1.2em; }
+  .content h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    margin-bottom: 0px; }
+  .content subtext {
+    color: gray;
+    font-family: "Crimson Text", cursive;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px; }
+  .content .profile {
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+    margin-bottom: 30px; }
+    .content .profile h2, .content .profile h3 {
+      font-family: "Roboto Condensed";
+      text-transform: uppercase; }
+    .content .profile h2 {
+      margin-bottom: 10px; }
+    .content .profile h3 {
+      margin-top: 0px;
+      margin-bottom: 10px; }
+    .content .profile p {
+      margin-top: 0px;
+      font-size: 1.2em; }
+
+footer {
+  color: gray;
+  margin: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "ROboto Condensed"; }
+  footer .heart {
+    color: red; }
+  footer a {
+    color: gray;
+    text-decoration: none;
+    border-bottom: 1px solid gray; }
+
+.mono {
+  font-family: monospace; }
