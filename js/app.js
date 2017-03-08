@@ -58,7 +58,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Jeremy Millard",
       "position": "Scouting, Analytics",
-      "image": "https://placehold.it/100x100?text=JM",
+      "image": "/assets/img/team/jeremy.jpeg",
       "bio": "Jeremy is 17 and a senior. He’s been a part of the SMHS robotics club for all four years of high school.  Jeremy also owns a Minecraft server called DiamondFire, where players build their own games using a scripting language he created.  He’s grown the server into a profitable business, with sales in over 35 countries. Jeremy plans to major in Computer Science."
     },
     {
@@ -82,7 +82,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Fernando Garcia",
       "position": "Software, Photographer",
-      "image": "https://placehold.it/100x100?text=FG",
+      "image": "/assets/img/team/fernando.jpg",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
     {
@@ -110,6 +110,12 @@ siteApp.controller('mainController', function($scope, $location){
       "bio": "Josh Volpe is 17 and is a junior. He has been a member of the Knight Regiment Front Ensemble for three years. Through his time in band he has learned the importance of teamwork, time management, and dedication."
     },
     {
+      "name": "Daniel Gutierrez",
+      "position": "Hardware",
+      "image": "/assets/img/team/daniel.jpg",
+      "bio": "Daniel is 17 and a junior at San Marcos high school. Despite not being a part of the team his freshman and sophomore year is glad to do what he can especially in the first robotics competition. On the robot he was in charge of the ball launcher mechanism."
+    },
+    {
       "name": "Vincent Le",
       "position": "Field Events",
       "image": "/assets/img/team/vincent.jpg",
@@ -122,6 +128,12 @@ siteApp.controller('mainController', function($scope, $location){
       "bio": "Emma is 17 and is senior. She founded the Women in Science Club and is co-president of the SMHS Rocketry Team. In addition, she has been dancing for over 14 years. This is her first year participating in robotics, and she has greatly enjoyed leading the social media and marketing team. Emma hopes to pursue a degree in chemical engineering in the near future."
     },
     {
+      "name": "Justin Quach",
+      "position": "Field Events",
+      "image": "/assets/img/team/justin.jpg",
+      "bio": "Justin is 16 and a Junior. He is an active contributor in both the school’s Academic League and Science Olympiad. His main hobbies include Origami and other precision based arts. Justin plans to major in electrical engineering at a 4 year university."
+    },
+    {
       "name": "Sean Yin",
       "position": "Software",
       "image": "/assets/img/team/sean.jpg",
@@ -130,8 +142,14 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Sean Saedi Nia",
       "position": "Social Media",
-      "image": "https://placehold.it/100x100?text=SS",
+      "image": "/assets/img/team/seans.jpg",
       "bio": "Sean is 16 years old and a junior at SMHS. This is his first year participating in the Business, Social media and, Marketing teams of the SMHS Alpha Knights. Throughout his high school he has participated in many clubs like the Future Health Profession club, Game Development and etc… . He plans on pursuing a career as a Cardiovascular Surgeon and is excited to be apart of this great experience."
+    },
+    {
+      "name": "Sinoeh Esparza",
+      "position": "Social Media",
+      "image": "/assets/img/team/sinoeh.jpg",
+      "bio": "Sinoeh is a 17 year old Junior attending San Marcos High School.  He is a part of the social media team.  He helps with instagram posts and account noticeability and helps out wherever else is needed, including attempts to get in touch with other teams.  Outside of school Sinoeh plays waterpolo, plays video games, and hangs out with friends."
     },
     {
       "name": "Morgan Vaca",
@@ -160,7 +178,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Marc MacGalliard",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=MM",
+      "image": "/assets/img/team/marc.jpg",
       "bio": "Marc is a 15 year old freshman at San Marcos High School. Involved in band, Boy Scouts, karate, and other programs, Marc enjoys being a builder and engineer who loves to experiment and contribute as much as possible. He has been involved with most all of the robot and continues to contribute to the best of his ability. Marc plans on going to the Cal Poly School of Engineering."
     },
     {
@@ -178,7 +196,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Brian Pack",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=BP",
+      "image": "/assets/img/team/brian.jpg",
       "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
     },
     {
