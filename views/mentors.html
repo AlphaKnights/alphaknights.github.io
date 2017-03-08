@@ -1,0 +1,35 @@
+<div class="hero hero-smaller" style="background-image: url(/assets/img/hero_dim_yearbook.jpg)">
+  <h1>
+    Meet the mentors.
+  </h1>
+  <div>
+    <!-- Sorry if you're looking for the video, I did some
+          audits and it really lags some devices. -->
+    <!-- <video src="/img/code.webm" autoplay loop></video> -->
+  </div>
+</div>
+
+<section style="background-color: #001438" class="white">
+  <div class="section group">
+    <div class="col span_1_of_5">
+      <h2>The Mentors</h2>
+    </div>
+    <div class="col span_4_of_5">
+      This group of people has assisted the Alpha Knights throughout their robotics adventure.
+    </div>
+  </div>
+
+  <div class="section group" style="margin-bottom: 20px" ng-repeat="person in mentors">
+    <div class="col span_1_of_5"></div>
+    <div class="col span_1_of_5">
+      <img src="https://placehold.it/150x150" class="profile-image center"></img>
+    </div>
+    <div class="col span_3_of_5">
+      <div style="margin-bottom: 2px; display: inline-block; font-size: 1.2em;">
+        <strong>{{ person.name }}</strong>
+      </div>
+      <br>
+      Est unde rerum voluptatibus rem voluptatem ullam autem. Impedit pariatur et vitae tempore facere voluptates voluptatum. Eligendi sit voluptatem ipsum sed et. Suscipit porro cum corrupti repellat autem. Ut dicta deserunt et eaque quia. Perferendis magnam ut minima porro.
+    </div>
+  </div>
+</section>
