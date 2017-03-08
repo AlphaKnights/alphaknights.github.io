@@ -190,13 +190,13 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Daniel Pack",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=DP",
+      "image": "/assets/img/team/danielp.jpg",
       "bio": "Daniel is 14 and a Freshman. He is one of the hardware engineers with the rope climber. He is also a member of Science Olympiad and Academic League at SMHS. He like to go to the beach and play tennis in his free time and he plans to study something related to one of the STEM fields in college. He joined the FRC to learn more about robotics and to gain experience and other useful knowledge from his teammates by doing this program."
     },
     {
       "name": "Brian Pack",
       "position": "Hardware",
-      "image": "/assets/img/team/brian.jpg",
+      "image": "https://placehold.it/100x100?text=DP",
       "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
     },
     {
