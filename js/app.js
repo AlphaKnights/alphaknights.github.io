@@ -199,6 +199,9 @@ siteApp.controller('mainController', function($scope, $location){
 siteApp.controller('mentorsController', function($scope, $location){
   $scope.mentors = [
     {
+      name: "Bob O'Neill"
+    },
+    {
       name: "Gayelea Esparza"
     },
     {
@@ -227,9 +230,6 @@ siteApp.controller('mentorsController', function($scope, $location){
     },
     {
       name: "Patty Tran"
-    },
-    {
-      name: "Bob O'Neill"
     },
     {
       name: "Alessandra Deerinck"
