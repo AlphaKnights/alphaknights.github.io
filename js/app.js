@@ -1,5 +1,11 @@
 var siteApp = angular.module('siteApp', ['ngRoute', 'ngAnimate']);
 
+mentors = [ ];
+
+$.getJSON("https://api.alphaknights.club/mentors.json").then(res => {
+  mentors = res;
+});
+
 siteApp.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
@@ -13,7 +19,7 @@ siteApp.config(function($routeProvider, $locationProvider){
     .otherwise({
       redirectTo: '/'
     });
-  
+
   // $locationProvider.html5Mode(true); // disabled for now since github pages :(
 });
 
@@ -214,48 +220,13 @@ siteApp.controller('mainController', function($scope, $location){
   ];
 });
 
-siteApp.controller('mentorsController', function($scope, $location){
-  $scope.mentors = [
-    {
-      name: "Bob O'Neill",
-      image: "/assets/img/mentors/oneill.jpg",
-      bio: "Mr. O'Neill worked for 20+ years as a Technical Project Manager for several companies including General Dynamics, Science Applications International Corporation (SAIC), and TransCore Inc.  More recently, Mr. O'Neill has taught various classes at San Marcos High School for the past 11 years including Geometry, Algebra 2, and AP Computer Science A.  Mr. O'Neill also advises several clubs including the Robotics Club, Model United Nations Club, and Future Health Care Professionals Club, and has now assumed the responsibility of Coach for our FIRST Robotics Rookie Team, the Alpha Knights (#6695)!"
-    },
-    {
-      name: "Gayelea Esparza"
-    },
-    {
-      name: "Laura Robinett"
-    },
-    {
-      name: "Robert Pack"
-    },
-    {
-      name: "Jeff Millard"
-    },
-    {
-      name: "Jennifer Yeh"
-    },
-    {
-      name: "Steve Vorres"
-    },
-    {
-      name: "Matt Volpe"
-    },
-    {
-      name: "Chuck Deerinck"
-    },
-    {
-      name: "Jose Gutierrez"
-    },
-    {
-      name: "Patty Tran"
-    },
-    {
-      name: "Alessandra Deerinck"
-    },
-    {
-      name: "Stephen des Jardins"
-    }
-  ];
+siteApp.controller('mentorsController', function($scope, $location, $http){
+  $scope.mentors = mentors;
+
+  if(!mentors.length){
+    $http.get("https://api.alphaknights.club/mentors.json").then(res => {
+      mentors = res.data
+      $scope.mentors = res.data
+    })
+  }
 });
