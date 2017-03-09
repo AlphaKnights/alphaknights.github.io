@@ -1,0 +1,31 @@
+<div class="hero hero-smaller" style="background-image: url(/assets/img/hero_dim_yearbook.jpg)">
+  <h1>
+    Alpha Knights Live
+  </h1>
+  <div>
+    <!-- Sorry if you're looking for the video, I did some
+          audits and it really lags some devices. -->
+    <!-- <video src="/img/code.webm" autoplay loop></video> -->
+  </div>
+</div>
+
+<section style="background-color: silver">
+  <div class="section group">
+    <div class="col span_5_of_5">
+      <div class="update update--{{ update.type }}" ng-repeat="update in updates | reverse">
+        <!--<span class="timestamp">{{ update.timestamp }}</span>-->
+        <p class="timestamp">
+          {{ update.timestamp | moment }}
+        </p>
+
+        <p class="caption">
+          {{ update.caption }}
+        </p>
+
+        <p>
+          <img ng-src="{{ update.url }}" ng-if="update.url">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

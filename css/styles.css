@@ -112,3 +112,39 @@ section div.group h1, section div.group h2 { line-height: 1em; }
   border-radius: 100%;
   margin: 0 auto;
 }
+
+.update{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.update.update--photo .caption{
+  max-width: 500px;
+  margin: 8px auto;
+}
+
+.update:last-of-type{
+  border-bottom: none;
+}
+
+.update p{
+  margin: 0;
+}
+
+.update img{
+  border-radius: 3px;
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.update .caption{
+  font-size: 2em;
+  /*margin: 8px auto;*/
+}
+
+.update .timestamp{
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.6);
+}

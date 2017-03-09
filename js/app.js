@@ -1,5 +1,18 @@
 var siteApp = angular.module('siteApp', ['ngRoute', 'ngAnimate']);
 
+siteApp.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
+});
+
+siteApp.filter('moment', function(){
+  return function(date){
+    return moment(date).fromNow()
+  }
+})
+
+socket = undefined; // for now...
 mentors = [ ];
 
 $.getJSON("https://api.alphaknights.club/mentors.json").then(res => {
@@ -15,6 +28,10 @@ siteApp.config(function($routeProvider, $locationProvider){
     .when('/mentors', {
       templateUrl: "views/mentors.html",
       controller: "mentorsController"
+    })
+    .when('/live', {
+      templateUrl: "views/live.html",
+      controller: "liveController"
     })
     .otherwise({
       redirectTo: '/'
@@ -229,4 +246,20 @@ siteApp.controller('mentorsController', function($scope, $location, $http){
       $scope.mentors = res.data
     })
   }
+});
+
+siteApp.controller('liveController', function($scope, $location, $http){
+  $scope.updates = [ ]
+
+  if(!socket) socket = io.connect("wss://live.alphaknights.club");
+
+  socket.on("feed:items", items => {
+    $scope.updates = items
+    $scope.$apply()
+  })
+
+  socket.on("feed:newitem", item => {
+    $scope.updates.push(item)
+    $scope.$apply()
+  })
 });
