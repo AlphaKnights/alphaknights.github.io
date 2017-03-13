@@ -198,7 +198,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Pricilla Chanthlangsy",
       "position": "Social Media",
-      "image": "/assets/img/team/davidCaccavo.png",
+      "image": "https://placehold.it/100x100?text=PC",
       "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
     },
     {
