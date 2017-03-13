@@ -1,5 +1,8 @@
 var siteApp = angular.module('siteApp', ['ngRoute', 'ngAnimate']);
 
+var TEST_MODE = window.location.hostname === "localhost";
+var API_HOST = TEST_MODE ? "http://localhost:3000" : "https://api.alphaknights.club";
+
 siteApp.filter('reverse', function() {
   return function(items) {
     return items.slice().reverse();
@@ -15,7 +18,7 @@ siteApp.filter('moment', function(){
 socket = undefined; // for now...
 mentors = [ ];
 
-$.getJSON("https://api.alphaknights.club/mentors.json").then(res => {
+$.getJSON(API_HOST + "/mentors.json").then(res => {
   mentors = res;
 });
 
@@ -32,6 +35,10 @@ siteApp.config(function($routeProvider, $locationProvider){
     .when('/live', {
       templateUrl: "views/live.html",
       controller: "liveController"
+    })
+    .when('/congratulations', {
+      templateUrl: "views/allstar.html",
+      controller: "allstarController"
     })
     .otherwise({
       redirectTo: '/'
@@ -241,7 +248,7 @@ siteApp.controller('mentorsController', function($scope, $location, $http){
   $scope.mentors = mentors;
 
   if(!mentors.length){
-    $http.get("https://api.alphaknights.club/mentors.json").then(res => {
+    $http.get(API_HOST + "/mentors.json").then(res => {
       mentors = res.data
       $scope.mentors = res.data
     })
@@ -262,4 +269,91 @@ siteApp.controller('liveController', function($scope, $location, $http){
     $scope.updates.push(item)
     $scope.$apply()
   })
+});
+
+siteApp.controller('allstarController', function($scope, $location, $http){
+  $scope.amount = "5";
+  $scope.showThanks = false;
+  $scope.loading = false;
+
+  // Create a Stripe client
+  var stripe = Stripe(TEST_MODE ? "pk_test_aayjQps82qwysfXMA9CTNpGb" : "pk_live_hhKOJh4L5wPfw6u01GNjUvKQ");
+
+  // Create an instance of Elements
+  var elements = stripe.elements();
+
+  // Custom styling can be passed to options when creating an Element.
+  // (Note that this demo uses a wider set of styles than the guide below.)
+  var style = {
+    base: {
+      color: '#32325d',
+      lineHeight: '24px',
+      fontFamily: '\"Roboto\", sans-serif',
+      fontSmoothing: 'antialiased',
+      fontSize: '16px',
+      '::placeholder': {
+        color: '#aab7c4'
+      }
+    },
+    invalid: {
+      color: '#fa755a',
+      iconColor: '#fa755a'
+    }
+  };
+
+  // Create an instance of the card Element
+  var card = elements.create('card', {style: style});
+
+  // Add an instance of the card Element into the `stripe-element` <div>
+  card.mount('#stripe-element');
+
+  // Handle real-time validation errors from the card Element.
+  card.addEventListener('change', function(event) {
+    // const displayError = document.getElementById('card-errors');
+    // if (event.error) {
+    //   displayError.textContent = event.error.message;
+    // } else {
+    //   displayError.textContent = '';
+    // }
+  });
+
+  // Handle form submission
+  var form = document.getElementById('payment-form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if($scope.amount){
+      $scope.loading = true;
+      $scope.$apply();
+
+      stripe.createToken(card).then(function(result) {
+        if(result.error){
+          // Inform the user if there was an error
+          $scope.loading = false;
+          $scope.$apply();
+          var errorElement = document.getElementById('card-errors');
+          errorElement.textContent = result.error.message;
+        }else{
+          $http.post(API_HOST + "/donate",
+          {
+            amount: $scope.amount,
+            stripeToken: result.token
+          })
+          .then(res => {
+            if(res.data && res.data.ok){
+              $scope.loading = false;
+              $scope.success = true;
+              $scope.showThanks = true;
+            }else{
+              alert("An error occurred processing your payment; please check your payment information and try again.");
+              $scope.loading = false;
+            }
+          })
+        }
+      });
+    }else{
+      alert("Please enter a valid donation amount.");
+    }
+  });
 });

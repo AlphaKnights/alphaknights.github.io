@@ -1,0 +1,62 @@
+<div class="hero" style="background-image: url(/assets/img/hero_award.jpg)">
+  <h1>
+    Go Alpha Knights!
+  </h1>
+</div>
+
+<section style="background-color: silver">
+  <div class="section group">
+    <div class="col span_2_of_5">
+      <h1>We need your help</h1>
+      
+      <p>
+        Dear Readers,
+      </p>
+
+      <p>
+        San Marcos High School's FRC team, the Alpha Knights, recently won FIRST's <strong>Rookie All-Star Award</strong> for the San Diego Regional! Everyone on the team is extremely excited that we won this, as this was our long-term goal for the team this FIRST season.
+      </p>
+
+      <p>
+        Winning this award means that we'll have a spot reserved for us in the FRC championships in Houston, TX. There's one problem &mdash; it's very expensive (around <strong>$1k/student</strong>) to send our team there, and we need a go-nogo decision by <strong>Tuesday, March 14th</strong>.
+      </p>
+
+      <p>
+        By donating to our campaign, you will be supporting a group of young individuals with great potential to succeed through STEM education. We greatly appreciate anything you can contribute &mdash; <strong>thank you</strong>!
+      </p>
+
+      <p>
+        <img src="/assets/img/logo.png" style="display: block; max-width: 150px; margin: 0 auto" alt="Alpha Knights Logo">
+      </p>
+    </div>
+    <div class="col span_3_of_5">
+      <h1>Contribute Now</h1>
+
+      <p>
+        Thank you in advance for your generous donation! We can use anything we can get. You can either donate through our <a href="https://www.gofundme.com/alpha-knights-frc-championship">GoFundMe campaign</a> or by entering an amount and your payment information below. (Payments are handled through our payment provider, <a href="http://stripe.com/">Stripe</a>, and we never see your card details)
+      </p>
+
+      <form action="/charge" method="post" id="payment-form">
+        <div class="form-row">
+          <div class="loading"></div>
+
+          <div class="stripe-form">
+            <div id="amount" ng-hide="showThanks">
+              <input type="number" ng-model="amount" name="amount" id="amount_field" placeholder="5.00 - Donation amount">
+            </div>
+            <div id="stripe-element" ng-hide="showThanks"></div>
+
+            <div class="thanks" ng-show="showThanks">
+              Thank you for your generous donation! A charge should show up on your bank statement as "FRC TEAM 6695". You're the best!
+            </div>
+            <button id="submit-donation" ng-class="{disabled: loading, success: success}" ng-disabled="loading">Donate ${{ amount }} to the Alpha Knights</button>
+          </div>
+        </div>
+      </form>
+
+      <p>
+        If you are a company or group and wish to sponsor us formally, please email sponsor@alphaknights.club. Thank you!
+      </p>
+    </div>
+  </div>
+</section>
