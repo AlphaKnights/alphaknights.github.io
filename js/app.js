@@ -84,7 +84,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "David Caccavo",
       "position": "Marketing, Social Media",
-      "image": "https://placehold.it/100x100?text=DC",
+      "image": "/assets/img/team/davidCaccavo.png",
       "bio": "David is 16 years old and is a junior. He plays lacrosse and is VP of Politics Club at SMHS. David has taken the opportunity to grow throughout his high school career. He is a member of the Simon Scholar Foundation and plans on attending a four-year university. Although this is his first year doing Robotics, he is trying to do anything he can to support the team."
     },
     {
@@ -198,7 +198,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Pricilla Chanthlangsy",
       "position": "Social Media",
-      "image": "https://placehold.it/100x100?text=PC",
+      "image": "/assets/img/team/davidCaccavo.png",
       "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
     },
     {
