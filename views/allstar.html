@@ -60,3 +60,39 @@
     </div>
   </div>
 </section>
+
+<section style="background-color: silver">
+  <div class="section group">
+    <div class="col span_1_of_5">
+      <h2>Who are we?</h2>
+    </div>
+    <div class="col span_4_of_5">
+      We, Alpha Knights, strive to utilize cooperation, innovation, ingenuity, and intellectuality into one cohesive team to grow as the future generation of builders. Our passion for robotics has exponentially cultivated our excitement and enthusiasm for engineering, as many of our students will soon be prospective workers in STEM fields. To inspire, encourage, and stimulate the students of San Marcos is what we aim to do for our community. Ultimately, we aspire to reflect original creativity and bring these designs to life for the future team of San Marcos High School. 
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #001438" class="white">
+  <div class="section group">
+    <div class="col span_1_of_5">
+      <h2>The Team</h2>
+    </div>
+    <div class="col span_4_of_5">
+      <h3 class="no-margin">Meet the Alpha Knights.</h3>
+    </div>
+  </div>
+
+  <div class="section group" style="margin-bottom: 20px" ng-repeat="person in members">
+    <div class="col span_1_of_5"></div>
+    <div class="col span_1_of_5">
+      <img ng-src="{{ person.image }}" class="profile-image center"></img>
+    </div>
+    <div class="col span_3_of_5">
+      <div style="margin-bottom: 2px; display: inline-block; font-size: 1.2em;">
+        <strong>{{ person.name }}</strong>. {{ person.position }}
+      </div>
+      <br>
+      {{ person.bio }}
+    </div>
+  </div>
+</section>
