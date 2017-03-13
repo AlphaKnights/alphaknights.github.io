@@ -488,9 +488,9 @@ siteApp.controller('allstarController', function($scope, $location, $http){
       fontFamily: '\"Roboto\", sans-serif',
       fontSmoothing: 'antialiased',
       fontSize: '16px',
-      '::placeholder': {
-        color: '#aab7c4'
-      }
+      // '::placeholder': {
+      //   color: '#aab7c4'
+      // }
     },
     invalid: {
       color: '#fa755a',
@@ -535,6 +535,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
           $http.post(API_HOST + "/donate",
           {
             amount: $scope.amount,
+            email: $scope.email,
             stripeToken: result.token
           })
           .then(res => {
@@ -543,7 +544,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
               $scope.success = true;
               $scope.showThanks = true;
             }else{
-              alert("An error occurred processing your payment; please check your payment information and try again.");
+              alert("An error occurred processing your payment: " + res.data.message);
               $scope.loading = false;
             }
           })

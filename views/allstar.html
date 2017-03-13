@@ -41,13 +41,16 @@
           <div class="loading"></div>
 
           <div class="stripe-form">
+            <div id="email" ng-hide="showThanks">
+              <input type="email" ng-model="email" name="email" id="email_field" placeholder="me@gmail.com - Receipt email (optional)">
+            </div>
             <div id="amount" ng-hide="showThanks">
               <input type="number" ng-model="amount" name="amount" id="amount_field" placeholder="5.00 - Donation amount">
             </div>
             <div id="stripe-element" ng-hide="showThanks"></div>
 
             <div class="thanks" ng-show="showThanks">
-              Thank you for your generous donation! A charge should show up on your bank statement as "FRC TEAM 6695". You're the best!
+              Thank you for your generous donation! A charge should show up on your bank statement as "FRC TEAM 6695". <span ng-if="email">An email has been sent to {{ email }} with a receipt for your donation.</span> You're the best!
             </div>
             <button id="submit-donation" ng-class="{disabled: loading, success: success}" ng-disabled="loading">Donate ${{ amount }} to the Alpha Knights</button>
           </div>
@@ -56,6 +59,10 @@
 
       <p>
         If you are a company or group and wish to sponsor us formally, please email sponsor@alphaknights.club. Thank you!
+      </p>
+
+      <p>
+        If you have donated in the past and wish for a confirmation of donation, please send the donation date and the last 4 digits of the card that was used to make the donation to donations@alphaknights.club. We will reply with a receipt of your donation.
       </p>
     </div>
   </div>
