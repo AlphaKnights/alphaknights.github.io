@@ -44,7 +44,7 @@ siteApp.config(function($routeProvider, $locationProvider){
       redirectTo: '/'
     });
 
-  // $locationProvider.html5Mode(true); // disabled for now since github pages :(
+  $locationProvider.html5Mode(true);
 });
 
 siteApp.controller('mainController', function($scope, $location){
