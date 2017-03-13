@@ -113,7 +113,7 @@ siteApp.controller('mainController', function($scope, $location){
     },
     {
       "name": "Fernando Garcia",
-      "position": "Software, Photographer",
+      "position": "Software, Photographer, Hardware",
       "image": "/assets/img/team/fernando.jpg",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
@@ -337,7 +337,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     },
     {
       "name": "Fernando Garcia",
-      "position": "Software, Photographer",
+      "position": "Software, Photographer, Hardware",
       "image": "/assets/img/team/fernando.jpg",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
