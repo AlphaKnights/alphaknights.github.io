@@ -48,6 +48,8 @@ siteApp.config(function($routeProvider, $locationProvider){
 });
 
 siteApp.controller('mainController', function($scope, $location){
+  $location.path("/congratulations");
+
   $scope.members = [
     {
       "name": "James Conde",
