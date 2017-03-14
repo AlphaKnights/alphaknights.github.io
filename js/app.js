@@ -84,7 +84,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "David Caccavo",
       "position": "Marketing, Social Media",
-      "image": "https://placehold.it/100x100?text=DC",
+      "image": "/assets/img/team/davidCaccavo.png",
       "bio": "David is 16 years old and is a junior. He plays lacrosse and is VP of Politics Club at SMHS. David has taken the opportunity to grow throughout his high school career. He is a member of the Simon Scholar Foundation and plans on attending a four-year university. Although this is his first year doing Robotics, he is trying to do anything he can to support the team."
     },
     {
@@ -102,7 +102,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Pasha Bouzarjomehri",
       "position": "Software",
-      "image": "https://placehold.it/100x100?text=PB",
+      "image": "/assets/img/team/pasha.jpg",
       "bio": "Pasha is a junior at SMHS. He has many years of experience in various scripting and programming languages for both personal uses and as an intern. He has joined the Alpha Knights team to bring his experience to the team and assist them in making the robot not only functional, but ultimately a winner. After spending countless hours with the build team on the 2017 rookie robot, he has made considerable progress on its software and firmware as a programming lead."
     },
     {
@@ -113,7 +113,7 @@ siteApp.controller('mainController', function($scope, $location){
     },
     {
       "name": "Fernando Garcia",
-      "position": "Software, Photographer",
+      "position": "Software, Photographer, Hardware",
       "image": "/assets/img/team/fernando.jpg",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
@@ -156,7 +156,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Emma Wensley",
       "position": "Marketing, Social Media",
-      "image": "https://placehold.it/100x100?text=EW",
+      "image": "/assets/img/team/emmaWensley.jpg",
       "bio": "Emma is 17 and is senior. She founded the Women in Science Club and is co-president of the SMHS Rocketry Team. In addition, she has been dancing for over 14 years. This is her first year participating in robotics, and she has greatly enjoyed leading the social media and marketing team. Emma hopes to pursue a degree in chemical engineering in the near future."
     },
     {
@@ -198,7 +198,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Pricilla Chanthlangsy",
       "position": "Social Media",
-      "image": "https://placehold.it/100x100?text=PC",
+      "image": "/assets/img/team/priscilla.jpg",
       "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
     },
     {
@@ -216,7 +216,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Andrew Tsai",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=AT",
+      "image": "/assets/img/team/andrewTsai.jpg",
       "bio": "Andrew was born and raised in West Philadelphia. His hobbies including chilling out, maxing, relaxing all cool, and shooting b-ball outside of the school. A couple of guys, who were up to no good, started makin trouble in his neighborhood. He didn’t get into a fight because he only fights Pasha, but his mother got scared and moved him with his aunt and uncle in San Marcos."
     },
     {
@@ -228,7 +228,7 @@ siteApp.controller('mainController', function($scope, $location){
     {
       "name": "Brian Pack",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=DP",
+      "image": "/assets/img/team/brianPack.jpg",
       "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
     },
     {
@@ -308,7 +308,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "David Caccavo",
       "position": "Marketing, Social Media",
-      "image": "https://placehold.it/100x100?text=DC",
+      "image": "/assets/img/team/davidCaccavo.png",
       "bio": "David is 16 years old and is a junior. He plays lacrosse and is VP of Politics Club at SMHS. David has taken the opportunity to grow throughout his high school career. He is a member of the Simon Scholar Foundation and plans on attending a four-year university. Although this is his first year doing Robotics, he is trying to do anything he can to support the team."
     },
     {
@@ -326,7 +326,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "Pasha Bouzarjomehri",
       "position": "Software",
-      "image": "https://placehold.it/100x100?text=PB",
+      "image": "/assets/img/team/pasha.jpg",
       "bio": "Pasha is a junior at SMHS. He has many years of experience in various scripting and programming languages for both personal uses and as an intern. He has joined the Alpha Knights team to bring his experience to the team and assist them in making the robot not only functional, but ultimately a winner. After spending countless hours with the build team on the 2017 rookie robot, he has made considerable progress on its software and firmware as a programming lead."
     },
     {
@@ -337,7 +337,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     },
     {
       "name": "Fernando Garcia",
-      "position": "Software, Photographer",
+      "position": "Software, Photographer, Hardware",
       "image": "/assets/img/team/fernando.jpg",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
@@ -380,7 +380,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "Emma Wensley",
       "position": "Marketing, Social Media",
-      "image": "https://placehold.it/100x100?text=EW",
+      "image": "/assets/img/team/emmaWensley.jpg",
       "bio": "Emma is 17 and is senior. She founded the Women in Science Club and is co-president of the SMHS Rocketry Team. In addition, she has been dancing for over 14 years. This is her first year participating in robotics, and she has greatly enjoyed leading the social media and marketing team. Emma hopes to pursue a degree in chemical engineering in the near future."
     },
     {
@@ -422,7 +422,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "Pricilla Chanthlangsy",
       "position": "Social Media",
-      "image": "https://placehold.it/100x100?text=PC",
+      "image": "/assets/img/team/priscilla.jpg",
       "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
     },
     {
@@ -440,7 +440,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "Andrew Tsai",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=AT",
+      "image": "/assets/img/team/andrewTsai.jpg",
       "bio": "Andrew was born and raised in West Philadelphia. His hobbies including chilling out, maxing, relaxing all cool, and shooting b-ball outside of the school. A couple of guys, who were up to no good, started makin trouble in his neighborhood. He didn’t get into a fight because he only fights Pasha, but his mother got scared and moved him with his aunt and uncle in San Marcos."
     },
     {
@@ -452,7 +452,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
     {
       "name": "Brian Pack",
       "position": "Hardware",
-      "image": "https://placehold.it/100x100?text=DP",
+      "image": "/assets/img/team/brianPack.jpg",
       "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
     },
     {

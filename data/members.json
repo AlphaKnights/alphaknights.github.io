@@ -32,13 +32,13 @@
   {
     "name": "David Caccavo",
     "position": "Marketing, Social Media",
-    "image": "https://placehold.it/100x100?text=DC",
+    "image": "/assets/img/team/davidCaccavo.png",
     "bio": "David is 16 years old and is a junior. He plays lacrosse and is VP of Politics Club at SMHS. David has taken the opportunity to grow throughout his high school career. He is a member of the Simon Scholar Foundation and plans on attending a four-year university. Although this is his first year doing Robotics, he is trying to do anything he can to support the team."
   },
   {
     "name": "Jeremy Millard",
     "position": "Scouting, Analytics",
-    "image": "https://placehold.it/100x100?text=JM",
+    "image": "/assets/img/team/jeremy.jpeg",
     "bio": "Jeremy is 17 and a senior. He’s been a part of the SMHS robotics club for all four years of high school.  Jeremy also owns a Minecraft server called DiamondFire, where players build their own games using a scripting language he created.  He’s grown the server into a profitable business, with sales in over 35 countries. Jeremy plans to major in Computer Science."
   },
   {
@@ -50,7 +50,7 @@
   {
     "name": "Pasha Bouzarjomehri",
     "position": "Software",
-    "image": "https://placehold.it/100x100?text=PB",
+    "image": "/assets/img/team/pasha.jpg",
     "bio": "Pasha is a junior at SMHS. He has many years of experience in various scripting and programming languages for both personal uses and as an intern. He has joined the Alpha Knights team to bring his experience to the team and assist them in making the robot not only functional, but ultimately a winner. After spending countless hours with the build team on the 2017 rookie robot, he has made considerable progress on its software and firmware as a programming lead."
   },
   {
@@ -61,8 +61,8 @@
   },
   {
     "name": "Fernando Garcia",
-    "position": "Software, Photographer",
-    "image": "https://placehold.it/100x100?text=FG",
+    "position": "Software, Photographer, Hardware",
+    "image": "/assets/img/team/fernando.jpg",
     "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
   },
   {
@@ -98,7 +98,7 @@
   {
     "name": "Emma Wensley",
     "position": "Marketing, Social Media",
-    "image": "https://placehold.it/100x100?text=EW",
+    "image": "/assets/img/team/EmmaWensley.jpg",
     "bio": "Emma is 17 and is senior. She founded the Women in Science Club and is co-president of the SMHS Rocketry Team. In addition, she has been dancing for over 14 years. This is her first year participating in robotics, and she has greatly enjoyed leading the social media and marketing team. Emma hopes to pursue a degree in chemical engineering in the near future."
   },
   {
@@ -110,7 +110,7 @@
   {
     "name": "Sean Saedi Nia",
     "position": "Social Media",
-    "image": "https://placehold.it/100x100?text=SS",
+    "image": "/assets/img/team/seans.jpg",
     "bio": "Sean is 16 years old and a junior at SMHS. This is his first year participating in the Business, Social media and, Marketing teams of the SMHS Alpha Knights. Throughout his high school he has participated in many clubs like the Future Health Profession club, Game Development and etc… . He plans on pursuing a career as a Cardiovascular Surgeon and is excited to be apart of this great experience."
   },
   {
@@ -128,7 +128,7 @@
   {
     "name": "Pricilla Chanthlangsy",
     "position": "Social Media",
-    "image": "https://placehold.it/100x100?text=PC",
+    "image": "/assets/img/team/priscilla.jpg",
     "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
   },
   {
@@ -140,25 +140,25 @@
   {
     "name": "Marc MacGalliard",
     "position": "Hardware",
-    "image": "https://placehold.it/100x100?text=MM",
+    "image": "/assets/img/team/marc.jpg",
     "bio": "Marc is a 15 year old freshman at San Marcos High School. Involved in band, Boy Scouts, karate, and other programs, Marc enjoys being a builder and engineer who loves to experiment and contribute as much as possible. He has been involved with most all of the robot and continues to contribute to the best of his ability. Marc plans on going to the Cal Poly School of Engineering."
   },
   {
     "name": "Andrew Tsai",
     "position": "Hardware",
-    "image": "https://placehold.it/100x100?text=AT",
+    "image": "/assets/img/team/AndrewTsai.jpg",
     "bio": "Andrew was born and raised in West Philadelphia. His hobbies including chilling out, maxing, relaxing all cool, and shooting b-ball outside of the school. A couple of guys, who were up to no good, started makin trouble in his neighborhood. He didn’t get into a fight because he only fights Pasha, but his mother got scared and moved him with his aunt and uncle in San Marcos."
   },
   {
     "name": "Daniel Pack",
     "position": "Hardware",
-    "image": "https://placehold.it/100x100?text=DP",
+    "image": "/assets/img/team/danielp.jpg",
     "bio": "Daniel is 14 and a Freshman. He is one of the hardware engineers with the rope climber. He is also a member of Science Olympiad and Academic League at SMHS. He like to go to the beach and play tennis in his free time and he plans to study something related to one of the STEM fields in college. He joined the FRC to learn more about robotics and to gain experience and other useful knowledge from his teammates by doing this program."
   },
   {
     "name": "Brian Pack",
     "position": "Hardware",
-    "image": "https://placehold.it/100x100?text=BP",
+    "image": "/assets/img/team/brianPack.jpg",
     "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
   },
   {
