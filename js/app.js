@@ -472,6 +472,7 @@ siteApp.controller('allstarController', function($scope, $location, $http){
   $scope.amount = "5";
   $scope.showThanks = false;
   $scope.loading = false;
+  $scope.alreadyGotToken = false;
 
   // Create a Stripe client
   var stripe = Stripe(TEST_MODE ? "pk_test_aayjQps82qwysfXMA9CTNpGb" : "pk_live_hhKOJh4L5wPfw6u01GNjUvKQ");
@@ -524,32 +525,35 @@ siteApp.controller('allstarController', function($scope, $location, $http){
       $scope.loading = true;
       $scope.$apply();
 
-      stripe.createToken(card).then(function(result) {
-        if(result.error){
-          // Inform the user if there was an error
-          $scope.loading = false;
-          $scope.$apply();
-          var errorElement = document.getElementById('card-errors');
-          errorElement.textContent = result.error.message;
-        }else{
-          $http.post(API_HOST + "/donate",
-          {
-            amount: $scope.amount,
-            email: $scope.email,
-            stripeToken: result.token
-          })
-          .then(res => {
-            if(res.data && res.data.ok){
-              $scope.loading = false;
-              $scope.success = true;
-              $scope.showThanks = true;
-            }else{
-              alert("An error occurred processing your payment: " + res.data.message);
-              $scope.loading = false;
-            }
-          })
-        }
-      });
+      if(!$scope.alreadyGotToken){
+        $scope.alreadyGotToken = true;
+        stripe.createToken(card).then(function(result) {
+          if(result.error){
+            // Inform the user if there was an error
+            $scope.loading = false;
+            $scope.$apply();
+            // var errorElement = document.getElementById('card-errors');
+            // errorElement.textContent = result.error.message;
+          }else{
+            $http.post(API_HOST + "/donate",
+            {
+              amount: $scope.amount,
+              email: $scope.email,
+              stripeToken: result.token
+            })
+            .then(res => {
+              if(res.data && res.data.ok){
+                $scope.loading = false;
+                $scope.success = true;
+                $scope.showThanks = true;
+              }else{
+                alert("An error occurred processing your payment: " + res.data.message);
+                $scope.loading = false;
+              }
+            })
+          }
+        });
+      }
     }else{
       alert("Please enter a valid donation amount.");
     }

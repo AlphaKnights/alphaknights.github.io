@@ -48,9 +48,11 @@
             <div id="email" ng-hide="showThanks">
               <input type="email" ng-model="email" name="email" id="email_field" placeholder="me@gmail.com - Receipt email (optional)">
             </div>
+
             <div id="amount" ng-hide="showThanks">
-              <input type="number" ng-model="amount" name="amount" id="amount_field" placeholder="5.00 - Donation amount">
+              <input type="number" ng-model="amount" min="0" max="999999" name="amount" id="amount_field" placeholder="5.00 - Donation amount">
             </div>
+
             <div id="stripe-element" ng-hide="showThanks"></div>
 
             <div class="thanks" ng-show="showThanks">
