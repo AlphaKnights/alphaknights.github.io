@@ -528,7 +528,6 @@ siteApp.controller('allstarController', function($scope, $location, $http){
       $scope.$apply();
 
       if(!$scope.alreadyGotToken){
-        $scope.alreadyGotToken = true;
         stripe.createToken(card).then(function(result) {
           if(result.error){
             // Inform the user if there was an error
@@ -537,6 +536,8 @@ siteApp.controller('allstarController', function($scope, $location, $http){
             // var errorElement = document.getElementById('card-errors');
             // errorElement.textContent = result.error.message;
           }else{
+            $scope.alreadyGotToken = true;
+            $scope.$apply();           
             $http.post(API_HOST + "/donate",
             {
               amount: $scope.amount,
