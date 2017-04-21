@@ -7,7 +7,7 @@
 <div class="live">
   <div class="left">
     <div class="match-card winner-{{ match.score_breakdown ? (match.alliances.red.score > match.alliances.blue.score ? 'red' : 'blue') : 'none' }}" ng-repeat="match in matches">
-      Match {{ match.match_number }} &mdash; AK on {{ match.alliances.blue.teams.indexOf("frc6695") !== -1 ? "Blue" : "Red" }}
+      Match {{ match.match_number }} &mdash; {{ match.score_breakdown ? (match.akWin ? "Win" : "Loss") : "Undetermined" }}
     </div>
   </div>
 
