@@ -237,3 +237,78 @@ section div.group h1, section div.group h2 { line-height: 1em; }
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+
+/* ALPHA KNIGHTS LIVE */
+.live{
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  background: #212121;
+}
+
+.live .left, .live .right{
+  width: 15%;
+  background: #212121;
+  color: white;
+  padding: 15px;
+}
+
+.live .right{
+  padding: 0px;
+}
+
+.live .center{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.stream{
+  height: 100%;
+  width: 100%;
+}
+/*
+.live .right{
+  width: 15
+}*/
+
+.full-height{
+  height: 100%;
+}
+
+.match-card{
+  margin-bottom: 15px;
+  background: #3e3e3e;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.match-card.winner-red{
+  background: #800;
+}
+
+.match-card.winner-blue{
+  background: #008;
+}
+
+@media only screen and (max-width: 480px) {
+  .live{
+    flex-direction: column;
+  }
+
+  .live .left, .live .right{
+    width: 100%;
+  }
+
+  .live .right{
+    display: none;
+  }
+
+  .live .center{
+    height: 300px;
+    display: initial;
+    flex-grow: initial;
+  }
+}

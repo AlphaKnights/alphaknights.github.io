@@ -1,0 +1,21 @@
+<!--<div class="hero hero-smaller" style="background-image: url(/assets/img/hero_award.jpg)">
+  <h1>
+    Alpha Knights in Houston
+  </h1>
+</div>-->
+
+<div class="live">
+  <div class="left">
+    <div class="match-card winner-{{ match.score_breakdown ? (match.alliances.red.score > match.alliances.blue.score ? 'red' : 'blue') : 'none' }}" ng-repeat="match in matches">
+      Match {{ match.match_number }} &mdash; AK on {{ match.alliances.blue.teams.indexOf("frc6695") !== -1 ? "Blue" : "Red" }}
+    </div>
+  </div>
+
+  <div class="center">
+    <iframe src="https://player.twitch.tv/?channel=firstinspires_carver" frameborder="0" allowfullscreen="true" scrolling="no" class="stream"></iframe>
+  </div>
+
+  <div class="right">
+    <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/AlphaKnightsSM">Tweets by AlphaKnightsSM</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
