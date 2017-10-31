@@ -72,9 +72,9 @@ body { margin: 0; }
   }
 }
 
-div.hero { top: 0; left: 0; background-size: cover; background-position: center -556px; animation: hero 30s infinite; -webkit-animation: hero 30s infinite; z-index: 5; color: white; position: relative; }
+div.hero { top: 0; left: 0; background-size: cover; background-position: center; z-index: 5; color: white; position: relative; }
 div.hero.hero-smaller h1{ padding-top: 90px; padding-bottom: 60px; }
-div.hero h1 { padding-top: 240px; padding-bottom: 200px; font-size: 3em; text-align: center; z-index: 10; position: relative; }
+div.hero h1 { padding-top: 220px; padding-bottom: 180px; font-size: 3em; text-align: center; z-index: 10; position: relative; }
 div.hero video { position: fixed; top: 0; left: 0; z-index: 5; width: 100%; filter: blur(5px); -webkit-filter: blur(5px); -o-filter: blur(5px); -moz-filter: blur(5px); }
 
 section { display: block; width: 100%; padding: 10px; z-index: 10; position: relative; }
@@ -311,4 +311,14 @@ section div.group h1, section div.group h2 { line-height: 1em; }
     display: initial;
     flex-grow: initial;
   }
+}
+
+/* New stuff */
+
+.big-section {
+  padding: 150px 0
+}
+
+.big-section .span_4_of_5 {
+  font-size: 1.3em
 }
