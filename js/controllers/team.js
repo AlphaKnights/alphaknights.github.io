@@ -1,16 +1,10 @@
 siteApp.controller('teamController', function($scope, $location){
   $scope.members = [
     {
-      "name": "James Conde",
-      "position": "President, Captain",
-      "image": "/assets/img/team/james.png",
-      "bio": "James Conde is a senior, 18, and about to start the next phase of his life in college. He is the founding Captain of San Marcos’s Inaugural First Robotics Team. He is very proud to be starting a program that he hopes will provide valuable experience and scholarships to the intrepid students who take on the First Robotics challenge. His hope is that future students learn as much as he has about robotics, leadership, marketing, business, and programming. Truly, First Robotics is not simply about engineering a great robot, but as James has come to see it, engineering a great team."
-    },
-    {
       "name": "Michael Maddy",
-      "position": "Vice-President",
-      "image": "/assets/img/team/michael.png",
-      "bio": "Michael Maddy is a junior and is 16 years old. He has participated in robotics club for 3 years and is one of the vice presidents. He has experience in Java development and dabbles in web development. As a child, he was always interested in electronics, cables and pipes. Now he plans to major in Computer Science or Engineering."
+      "position": "Captain",
+      "image": "/assets/img/team/Michael.webp",
+      "bio": "Michael Maddy is a Senior and is 17 years old. He has participated in robotics club for 3 years and is one of the vice presidents. He has experience in Java development and dabbles in web development. As a child, he was always interested in electronics, cables and pipes. Now he plans to major in Computer Science or Engineering."
     },
     {
       "name": "Ashik Simon",
@@ -25,22 +19,10 @@ siteApp.controller('teamController', function($scope, $location){
       "bio": "TJ is a 16-year-old sophomore. In his free time, he likes building cool software projects and whatnot. Professionally, he has interned for StudentRND since middle school. StudentRND is a nonprofit whose goal is to get students to take the first step into the programming world; StudentRND also runs an event called CodeDay — a 24-hour programming marathon geared toward beginners. He plans to major in Computer Science. He also made this website!"
     },
     {
-      "name": "Mary Anne Lee",
-      "position": "Hardware, Social Media",
-      "image": "/assets/img/team/maryanne.jpg",
-      "bio": "Mary Anne is 17 and a senior. She is captain of Academic League and Math Club at San Marcos High School, and has been involved with international and national piano competition since the age of 5. She plans to attend a 4 year university and major in molecular biology in the near future."
-    },
-    {
       "name": "David Caccavo",
       "position": "Marketing, Social Media",
       "image": "/assets/img/team/davidCaccavo.png",
       "bio": "David is 16 years old and is a junior. He plays lacrosse and is VP of Politics Club at SMHS. David has taken the opportunity to grow throughout his high school career. He is a member of the Simon Scholar Foundation and plans on attending a four-year university. Although this is his first year doing Robotics, he is trying to do anything he can to support the team."
-    },
-    {
-      "name": "Jeremy Millard",
-      "position": "Scouting, Analytics",
-      "image": "/assets/img/team/jeremy.jpeg",
-      "bio": "Jeremy is 17 and a senior. He’s been a part of the SMHS robotics club for all four years of high school.  Jeremy also owns a Minecraft server called DiamondFire, where players build their own games using a scripting language he created.  He’s grown the server into a profitable business, with sales in over 35 countries. Jeremy plans to major in Computer Science."
     },
     {
       "name": "Damien Deerinck",
@@ -63,7 +45,7 @@ siteApp.controller('teamController', function($scope, $location){
     {
       "name": "Fernando Garcia",
       "position": "Software, Photographer, Hardware",
-      "image": "/assets/img/team/fernando.jpg",
+      "image": "/assets/img/team/FernandoGarcia.webp",
       "bio": "Fernando is 16 and a junior at SMHS. He is currently a programer and photographer for the Alpha Knights. He also helps out in other ways such as hardware and engineering. Fernando plans on doing Cyber Operations and Warfare in the future for the Navy or Valparaiso University. He is also interested in Musical Performances in guitar."
     },
     {
@@ -103,12 +85,6 @@ siteApp.controller('teamController', function($scope, $location){
       "bio": "Vincent Le is 17 and is a Junior. He enjoys playing osu! and is experiencing his first time in a robotics team. He plans to work in the computer industry when he leaves high school and possibly design games if given a chance."
     },
     {
-      "name": "Emma Wensley",
-      "position": "Marketing, Social Media",
-      "image": "/assets/img/team/emmaWensley.jpg",
-      "bio": "Emma is 17 and is senior. She founded the Women in Science Club and is co-president of the SMHS Rocketry Team. In addition, she has been dancing for over 14 years. This is her first year participating in robotics, and she has greatly enjoyed leading the social media and marketing team. Emma hopes to pursue a degree in chemical engineering in the near future."
-    },
-    {
       "name": "Justin Quach",
       "position": "Field Events",
       "image": "/assets/img/team/justin.jpg",
@@ -139,21 +115,15 @@ siteApp.controller('teamController', function($scope, $location){
       "bio": "Morgan is currently a junior at SMHS and this is her first year participating in the marketing and social media aspect of the Alpha Knights. She currently has an internship at Palomar Hospital and is stationed in the Cardiovascular field. She is excited to see what the Alpha Knight’s can accomplish this year and what she can learn from the FRC."
     },
     {
-      "name": "Jasmine Krause",
-      "position": "Social Media, Marketing",
-      "image": "/assets/img/team/jasmine.jpg",
-      "bio": "Jasmine is currently a junior at San Marcos High School. This is her first year participating in the social media and marketing team of Robotics. She has been on Varsity track and field for 2 years and plans to continue. She wants to be a biomedical engineer and is very interested in the medical and technological field."
-    },
-    {
       "name": "Pricilla Chanthlangsy",
       "position": "Social Media",
-      "image": "/assets/img/team/priscilla.jpg",
+      "image": "/assets/img/team/PriscillaC.webp",
       "bio": "Priscilla is 16 and a junior at San Marcos High School. She is excited to join a club that is outside her range and learn about making robots. She is apart of the creative and visual aspects of the Robotics Team and makes sure that they look a-1. Priscilla plans on becoming a great film director and promote the Robotics Club  to everyone."
     },
     {
       "name": "Brooke Adams",
       "position": "Social Media",
-      "image": "/assets/img/team/brooke.jpg",
+      "image": "/assets/img/team/BrookAdams.webp",
       "bio": "Brooke is 16 and a junior at San Marcos High School. She decided to join the team and club to expand outside her comfort zone. She is apart of the visual aspects and social media as well as field hockey, water polo, and softball. She plans on going to UCSB or UCI and study Kinesiology, or Digital media communication."
     },
     {
@@ -177,13 +147,13 @@ siteApp.controller('teamController', function($scope, $location){
     {
       "name": "Brian Pack",
       "position": "Hardware",
-      "image": "/assets/img/team/brianPack.jpg",
+      "image": "/assets/img/team/BrianPack.webp",
       "bio": "Brian is a junior at SMHS.  He has been interested in many different STEM fields throughout his life.  He is on the school's Science Olympiad and Tarc Rocket teams for the last two years, and has also had experience with drones and computer programing.  He joined the robotics team to learn more about robotics, engineering and coding.  Brian is working on the ball launching and collecting teams for the Alpha Knights."
     },
     {
       "name": "Troy Ryder",
       "position": "Hardware",
-      "image": "/assets/img/team/troy.jpg",
+      "image": "/assets/img/team/TroyRyder.webp",
       "bio": "Troy Ryder is a Junior at San Marcos High School. Troy joined the Robotics Team because it seemed like fun.  What Troy didn’t know before is that it was a lot of work.  Now Troy is working on the Robotics Team and having fun."
     },
     {
