@@ -53,6 +53,10 @@ siteApp.config(function($routeProvider, $locationProvider){
       templateUrl: "views/houston.html",
       controller: "houstonController"
     })
+    .when('/mailchimp', {
+      templateUrl: "views/EmailList.html",
+      controller: "emailListContorler"
+    })
     .otherwise({
       redirectTo: '/'
     });
