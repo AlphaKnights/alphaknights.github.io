@@ -17,9 +17,14 @@ siteApp.filter('moment', function(){
 
 socket = undefined; // for now...
 mentors = [ ];
+members = [ ];
 
 $.getJSON(API_HOST + "/mentors.json").then(res => {
   mentors = res;
+});
+
+$.getJSON(API_HOST + "/members.json").then(res => {
+  members = res;
 });
 
 siteApp.config(function($routeProvider, $locationProvider){
